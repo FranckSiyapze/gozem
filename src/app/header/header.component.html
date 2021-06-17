@@ -1,4 +1,4 @@
-<div  class="sticky-top">
+<div  class="sticky-top d-none d-lg-block">
   <!-- nav menu -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light nav-menu">
     <div class="container my-nav-menu">
@@ -6,7 +6,7 @@
         <img src="./../../assets/img/gozem-logo.png" class="logo" alt="cfacash_logo" loading="lazy" />
       </a>
       
-      <button
+      <!-- <button
       class="navbar-toggler"
       type="button"
       (click)="inlineNav.toggle()"
@@ -14,11 +14,9 @@
       aria-label="Toggle navigation"
     >
       <i class="fas fa-bars"></i>
-    </button>
+    </button> -->
 
-      <div class="collapse navbar-collapse" id="navbarButtonsExample"
-      mdbCollapse
-      #inlineNav="mdbCollapse">
+      <div class="collapse navbar-collapse" id="navbarButtonsExample">
         
         <div class="ms-auto">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -45,11 +43,141 @@
               <!-- <button type="button" class="btn btn-outline-secondary">
                 Secondary
               </button> -->
-              <a class="nav-link btn btn-outline-success btn-rounded btn-sm mt-1 btn-connexion">
+              <!-- <a class="nav-link btn btn-outline-success btn-rounded btn-sm mt-1 btn-connexion">
                 <i class="fas fa-bars" style="padding-right: 15px; "></i> 
                 <i class="fas fa-user-circle" style="font-size: 20px !important;"></i>
+              </a> -->
+              <!-- <div mdbDropdown class="btn-group">
+                <button
+                  type="button"
+                  class="btn btn-outline-success btn-rounded btn-sm mt-1 btn-connexion"
+                  mdbDropdownToggle
+                  aria-expanded="false"
+                >
+                  Right-aligned menu
+                </button>
+                <ul mdbDropdownMenu class="dropdown-menu dropdown-menu-end">
+                  <li><button class="dropdown-item" type="button">Action</button></li>
+                  <li>
+                    <button class="dropdown-item" type="button">Another action</button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" type="button">Something else here</button>
+                  </li>
+                </ul>
+              </div> -->
+              <div mdbDropdown class="dropdown" style="margin-top: 3px;">
+                <button
+                  class="btn btn-outline-success btn-rounded btn-sm dropdown-toggle"
+                  type="button"
+                  id="dropdownMenu2"
+                  mdbDropdownToggle
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-bars" style="padding-right: 8px; "></i> 
+                  <i class="fas fa-user-circle" style="font-size: 20px !important;"></i>
+                </button>
+                <ul mdbDropdownMenu class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#">Inscription</a></li>
+                  <li><a class="dropdown-item" href="#">Connexion</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">Heberger des voyageurs</a></li>
+                  <li><a class="dropdown-item" href="#">Créer une expérience</a></li>
+                  <li><a class="dropdown-item" href="#">Aide</a></li>
+                </ul>              
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </nav>
+
+</div>
+
+<div  class="sticky-top d-block d-lg-none">
+  <!-- nav menu -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light nav-menu">
+    <div class="container my-nav-menu">
+      <a class="navbar-brand" href="#">
+        <img src="./../../assets/img/gozem-logo.png" class="logo" alt="cfacash_logo" loading="lazy" />
+      </a>
+      
+      <button
+      class="navbar-toggler"
+      type="button"
+      (click)="inlineNav.toggle()"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+      <div class="collapse navbar-collapse" id="navbarButtonsExample"
+      mdbCollapse
+      #inlineNav="mdbCollapse">
+        
+        <div class="ms-auto">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link btn btn-link px-2 me-2 nav-menu" onclick="replaceToArea('contact')" id="5" type="button">
+                Inscription
               </a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-link px-2 me-2 nav-menu" onclick="replaceToArea('contact')" id="5" type="button">
+                Connexion
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-link px-2 me-2 nav-menu" onclick="replaceToArea('contact')" id="5" type="button">
+                Heberger des voyageurs
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-link px-2 me-2 nav-menu" onclick="replaceToArea('contact')" id="5" type="button">
+                Créer une expérience
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-link px-2 me-2 nav-menu" onclick="replaceToArea('contact')" id="5" type="button">
+                Aide
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-link px-2 me-2 nav-menu" onclick="replaceToArea('contact')" id="5" type="button">
+                  CONTACTS
+              </a>
+            </li>
+           <!--  <li class="nav-item">
+              <div mdbDropdown class="dropdown">
+                <button
+                  class="btn btn-outline-success btn-rounded btn-sm dropdown-toggle"
+                  type="button"
+                  id="dropdownMenu2"
+                  mdbDropdownToggle
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-bars" style="padding-right: 8px; "></i> 
+                  <i class="fas fa-user-circle" style="font-size: 20px !important;"></i>
+                </button>
+                <ul mdbDropdownMenu class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#">Inscription</a></li>
+                  <li><a class="dropdown-item" href="#">Connexion</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">Heberger des voyageurs</a></li>
+                  <li><a class="dropdown-item" href="#">Créer une expérience</a></li>
+                  <li><a class="dropdown-item" href="#">Aide</a></li>
+                </ul>              
+              </div>
+            </li> -->
           </ul>
         </div>
       </div>
